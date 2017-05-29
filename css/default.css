@@ -17,35 +17,30 @@ body{
 
 #gnav a {
   display: block;
-  padding:10px 0;
   text-align: center;
   text-decoration: none;
-  background: darkgreen;
   color: white;
 }
-#gnav a:hover {
-  background: lightgreen;
-  color: black;
+#gnav a:after {
+	clear: both;
 }
-#gnav ul {
-  overflow: hidden;
+#gnav div.img {
+	display: table-cell;
+	vertical-align: middle;
+	background: url(../img/css_sprite.png) no-repeat;
+	width: 55px;
+	height: 46px;
 }
-#gnav a.selected {
-  background: white;
-  color: darkgreen;
-  font-weight: bold;
+#gnav div.text {
+	display: table-cell;
+	vertical-align: middle;
+	padding:10px 5px;
 }
-
-#gnav li {
-  float: left;
-  width: 156px;
-  border-right: white 1px solid;
-  list-style-type: none;
-}
-
-#gnav li:first-child {
-  border-left: white 1px solid;
-}
+div.img#home{background-position:0 0px;}
+div.img#content1{background-position: 0 -46px;}
+div.img#content2{background-position: 0 -92px;}
+div.img#help{background-position: 0 148;}
+div.img#faq{background-position: 0 -184px;}
 
 .breadcrumbs li {
         display: inline;
