@@ -9,7 +9,7 @@ body{
         list-style-type: none;
 }
 
-.breadcrumbs li before {
+.breadcrumbs li:before {
         content: " > ";
 }
 
